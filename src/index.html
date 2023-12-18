@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- font google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">StasiunCari</a>
+          <button
+            class="navbar-toggler text-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >
+                  Home
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container d-flex flex-column gap-5">
+        <script src="src/component/searchBar.js"></script>
+        <content-search></content-search>
+
+        <section class="content-result">
+          <h2>Hasil Pencarian:</h2>
+          <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 mt-1"
+            id="listStations"
+          ></div>
+          <div id="rowErrorMessage" class="row"></div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container d-flex flex-row justify-content-between align-items-baseline gap-3">
+        <h4>StasiunCari</h4>
+        <p class="text-center">
+          &copy; 2023 StasiunCari - Sarana Pencari Stasiun Kereta Api Di
+          indonesia
+        </p>
+        <ul class="social-media list-group list-unstyled d-flex flex-row gap-4">
+          <li class="list-item">
+            <a href="#"><i class="fa-instagram fa-brands"></i></a>
+          </li>
+          <li class="list-item">
+            <a href="#"><i class="fa-twitter fa-brands"></i></a>
+          </li>
+          <li class="list-item">
+            <a href="#"><i class="fa-facebook fa-brands"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
